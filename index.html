@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DO IT YOUR WAY</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #071f55;
+      color: white;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background:
+      linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.65)),
+      url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1800&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 80px;
+    }
+
+    .title {
+      font-size: 5rem;
+      line-height: .95;
+      font-weight: 700;
+    }
+
+    .yellow {
+      color: #ffd028;
+    }
+
+    .btn {
+      padding: 16px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 12px;
+      margin-top: 20px;
+    }
+
+    .blue {
+      background: #0aa7ff;
+      color: white;
+    }
+
+    .pink {
+      background: #ff2d8d;
+      color: white;
+    }
+
+    .section {
+      padding: 80px 40px;
+      background: white;
+      color: #071f55;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 24px;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div>
+    <img src="https://i.imgur.com/oQ8Jm6o.png" width="180">
+
+    <h1 class="title">
+      το δικό σου έργο,<br>
+      με τον <span class="yellow">δικό σου</span> τρόπο.
+    </h1>
+
+    <p style="font-size:1.4rem; max-width:700px;">
+      ένα δημιουργικό ταξίδι 2 εβδομάδων για εφήβους 13-18 ετών.
+    </p>
+
+    <a class="btn blue" href="#">
+      ανακάλυψε τα εργαστήρια
+    </a>
+
+    <a class="btn pink" href="#">
+      κάνε εγγραφή
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>τα εργαστήρια</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h3>say it your way</h3>
+        <p>λογοτεχνία & ψηφιακή αφήγηση</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h3>act your way</h3>
+        <p>θέατρο & υποκριτική</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h3>move your way</h3>
+        <p>κίνηση & χορός</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
